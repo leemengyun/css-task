@@ -1,0 +1,68 @@
+:root {
+  --site-edge-margin: 130px;
+  --main-font-family: 'Noto Sans TC', 'Montserrat', sans-serif;
+}
+
+body {
+  /* color palette from figma - style guide */
+  --brand-color: #24195c;
+  --primary-color: #007feb;
+  --secondary-color: #6c757d;
+  --success-color: #3dd598;
+  --warning-color: #ffc542;
+  --error-color: #fc5a5a;
+  --third-color-20: #fc5a5a;
+
+  --main-white: var(--gray-0);
+  --main-black: var(--gray-100);
+  --main-border: #e6ecf0;
+  --test-border: #5273e0;
+
+  --background-blue: #f4f5fb;
+  --background-white: var(--gray-0);
+
+  --gray-100: #111827;
+  --gray-90: #1f2937;
+  --gray-80: #374151;
+  --gray-70: #4b5563;
+  --gray-60: #a0aec0;
+  --gray-50: #9ca3af;
+  --gray-40: #d1d5db;
+  --gray-30: #e5e7eb;
+  --gray-20: #f3f4f6;
+  --gray-10: #f9fafb;
+  --gray-0: #ffffff;
+
+  --sec-color-yellow: #ffd749;
+  --sec-color-purple: #dbd5fe;
+  --sec-color-pink: #ff3985;
+
+  /* color palette for filter */
+  --icon-main-color: invert(10%) sepia(58%) saturate(2859%) hue-rotate(239deg)
+    brightness(93%) contrast(101%);
+
+  --icon-gray-color: invert(25%) sepia(10%) saturate(545%) hue-rotate(201deg)
+    brightness(97%) contrast(92%);
+
+  --icon-white-color: invert(100%) sepia(4%) saturate(7471%) hue-rotate(86deg)
+    brightness(118%) contrast(107%);
+
+  /* margin */
+  --margin-xs: 8px;
+  --margin-s: 16px;
+  --margin-m: 24px;
+  --margin-l: 32px;
+
+  /* padding */
+  --padding-xs: 8px;
+  --padding-s: 16px;
+  --padding-m: 24px;
+  --padding-l: 32px;
+
+  /* fonts */
+  --font-standard: 16px;
+  --font-14: 0.9rem;
+  --font-18: 1.2rem;
+  --font-24: 1.5rem;
+  --font-28: 1.75rem;
+}

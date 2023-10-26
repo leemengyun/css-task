@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LabLab</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header_container">
+        <header class="header_group flex_row_cb">
+          <div class="header_logo"></div>
+
+          <div class="header_search_group flex_row_cb">
+            <div class="header_search_bar">
+              <div class="search_input_group input_group">
+                <span class="icon_search" aria-hidden="true"
+                  ><img
+                    src="./assets/images/icons/i_search.svg"
+                    alt="icon search"
+                /></span>
+                <input
+                  type="text"
+                  class="form_control"
+                  placeholder="Explore Services"
+                  id="search"
+                />
+              </div>
+            </div>
+
+            <div class="btn icon_btn use_login_btn">
+              <img src="./assets/images/icons/i_user.svg" alt="icon user" />
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <!-- header //End -->
+
+      <!-- nav -->
+      <section class="nav_container">
+        <nav class="nav_section flex_row_cb">
+          <ul class="nav_links ">
+            <li class="active">
+              <a href="javascript:void(0)">Discover</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Trending</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Popular</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">Life</a>
+            </li>
+          </ul>
+
+          <div
+            class="btn icon_text_btn flex_row_cc"
+            id="filter_btn"
+            onclick="formToggle()"
+          >
+            <i>
+              <img src="./assets/images/icons/i_filter.svg" alt="icon filter" />
+            </i>
+            <span>Filter</span>
+          </div>
+        </nav>
+
+        <!-- filter form -->
+        <form action="" class="filter_form " id="filter_form">
+          <div id="form_wrapper" class="form_wrapper flex_row">
+            <div class="input_row_col">
+              <div class="input_form_group form_group_column ">
+                <label for="keyword" class="input_label">Keyword</label>
+                <div class="input_group outline_style">
+                  <input
+                    type="text"
+                    class="form_control"
+                    placeholder="search..."
+                    id="keyword"
+                  />
+
+                  <span class="icon_clear" aria-hidden="true">
+                    <i></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="input_form_group form_group_column ">
+                <label class="input_label" for="tags">Tags</label>
+                <div class="input_group outline_style">
+                  <input
+                    type="text"
+                    class="form_control"
+                    placeholder="search..."
+                    id="tags"
+                  />
+
+                  <span class="icon_clear" aria-hidden="true">
+                    <i></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn text_btn flex_row_cc">
+              <span>Show Result</span>
+            </div>
+          </div>
+        </form>
+        <!-- filter form //End -->
+      </section>
+      <!-- nav //End -->
+
+      <!-- main -->
+      <div class="main_container">
+        <main class="main_section">
+          <!-- one card -->
+          <div class="card_wrapper travel">
+            <figure>
+              <div class="card_img"></div>
+              <!-- <img src="" alt="" /> -->
+            </figure>
+            <article>
+              <div class="flex_row_cb">
+                <h5>Keeping you covered with unlimited medical expenses.</h5>
+                <span class="star_rating">
+                  <i class="icon_star">★</i>
+                  5
+                </span>
+              </div>
+              <h6>Keeping you covered with unlimited medical expenses.</h6>
+              <div class="tag_wrap">
+                <span class="type_tag">Annual multi-trip</span>
+                <span class="type_tag">Single trip</span>
+                <span class="type_tag">European travel</span>
+                <span class="type_tag">Over 70s</span>
+              </div>
+              <p class="price">from <b>£40</b></p>
+            </article>
+          </div>
+          <!-- one card //End -->
+          <!-- one card -->
+          <div class="card_wrapper life">
+            <figure>
+              <div class="card_img"></div>
+              <span class="ad_tag">SavePlan</span>
+            </figure>
+            <article>
+              <div class="flex_row_cb">
+                <h5>Home insurance</h5>
+                <span class="star_rating">
+                  <i class="icon_star">★</i>
+                  4.9
+                </span>
+              </div>
+              <h6>
+                Get an Over 50s Life Cover quote today and protect what matters
+                to you
+              </h6>
+              <div class="tag_wrap">
+                <span class="type_tag">Buildings</span>
+                <span class="type_tag">Contents</span>
+                <span class="type_tag">Buildings and contents</span>
+              </div>
+              <p class="price">from <b>£136</b></p>
+            </article>
+          </div>
+          <!-- one card //End -->
+        </main>
+      </div>
+      <!-- main //End -->
+    </div>
+
+    <script src="./assets/script/index.js"></script>
+  </body>
+</html>

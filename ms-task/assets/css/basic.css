@@ -1,0 +1,373 @@
+/* @group All Overrides ----------------------------------------------------------------------------------------*/
+html,
+body {
+  font-family: var(--main-font-family), 'sans-serif';
+  font-size: var(--font-standard);
+  font-style: normal;
+  font-weight: 400;
+
+  text-align: left;
+  text-justify: distribute;
+  text-justify: inter-ideograph;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+
+  background-color: var(--background-blue);
+  color: var(--gray-80);
+  word-break: break-word;
+  user-select: none;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+textarea,
+input,
+button,
+span,
+applet,
+object,
+iframe,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: var(--main-font-family), 'sans-serif';
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.cursor-point {
+  cursor: pointer;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  padding: 0;
+}
+
+/* general setting ---------------------- */
+*,
+ol,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+.btn {
+  outline-width: 0;
+  outline_style: none;
+  outline: none !important;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+/* scroll bar setting---------------------- */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #fafafa;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 11px;
+  width: 11px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #ededed;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #fafafa;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #c1c1c1;
+  border: 1px solid #ffffff;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #9d9d9d;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #c1c1c1;
+}
+
+/* form reset---------------------- */
+/* reset input style */
+
+.input_group input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  display: table-cell;
+
+  background: transparent;
+  border: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  text-align: left;
+  font-weight: normal;
+  height: auto;
+  padding: 0;
+}
+
+/* button reset---------------------- */
+button,
+select {
+  text-transform: none;
+  border: none;
+}
+
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+/* End  [@group All Overrides ] ----------------------------------------------------------------------------------------*/
+
+/* @group [fonts setting ] ----------------------------------------------------------------------------------------*/
+html {
+  font-size: 16px; /* Setting standard for rem fonts */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  color: inherit;
+}
+h1 {
+  font-size: 4rem;
+  line-height: 78px;
+}
+h2 {
+  font-size: 3rem;
+  line-height: 52px;
+}
+h3 {
+  /* font-size: 28px; */
+  font-size: var(--font-28);
+  line-height: 26px;
+}
+h4 {
+  /* font-size: 24px; */
+  font-size: var(--font-24);
+  line-height: 26px;
+}
+h5 {
+  /* font-size: 18px; */
+  font-size: var(--font-18);
+  line-height: 20px;
+}
+
+/* End  [@fonts setting ] ----------------------------------------------------------------------------------------*/
+
+/* @group [flex box ] ----------------------------------------------------------------------------------------*/
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row_center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_row_cc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_row_cb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex_row_ca {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex_col_cc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End  [@flex box ] ----------------------------------------------------------------------------------------*/
+
+/* @ [input basic setting ] ----------------------------------------------------------------------------------------*/
+
+.input_group {
+  width: 100%;
+  text-align: left;
+  /* border: 2px solid #979797; */
+  border-radius: 26px;
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  line-height: 24px;
+}
+
+.input_group input {
+  width: 100%;
+  padding-right: 12px;
+  font-size: var(--font-14);
+}
+
+/* End  [@input basic setting] ----------------------------------------------------------------------------------------*/
+
+/* @ [button basic setting ] ----------------------------------------------------------------------------------------*/
+.btn {
+  cursor: pointer;
+}
+/* End  [@button basic setting] ----------------------------------------------------------------------------------------*/
